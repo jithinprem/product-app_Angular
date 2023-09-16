@@ -1,0 +1,10 @@
+<app-twoway-binding-child [(size)] = "fontSize"></app-twoway-binding-child>  
+{{fontSize}}
+<button (click)="incFont()">Parent increase the size</button> 
+<!--   
+    note : [(size)] the "size" you see here is the property of the child and the "fontSize" is the property of parent
+    and there should be a emmiter for the size when using like this
+
+    here when the button from the child is clicked we get the fontSize gets updated also when the button from
+    the parent is clicked the similar thing happens
+-->

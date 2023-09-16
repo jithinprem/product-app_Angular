@@ -1,0 +1,12 @@
+<h3>TEMPLATE VARIABLE DEMO</h3>
+<input type="text" #phone>
+<button (click)="displayPhone(phone.value)">get Phone on console</button>
+<br>
+<h4>ngModel demo</h4>
+<input placeholder="using [(ngModel)]" [(ngModel)] = "ngModelInput">
+<label for="">{{ngModelInput}}</label>
+
+<h4>ngIf demo</h4>
+<div *ngIf="true"> ngIf is set to true</div>
+ng if is set to false below 
+<div *ngIf="false" style="background-color: yellow;"> ngIf is set to true</div>

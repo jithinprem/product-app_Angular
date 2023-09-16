@@ -1,0 +1,7 @@
+<div>
+    <h3>TWO WAY RENDERING DEMO</h3>
+    <h5 class="twoway-binding-text" [style.fontSize.px]="size">I can increase size by two way binding</h5>
+    <button class="inc-text-btn" (click)="incSize()">+</button>
+    <button class="dec-text-btn" (click)="decSize()">-</button>
+    <label for="" [style.fontSize.px]="size"> fontSize : {{size}}</label>
+</div>
