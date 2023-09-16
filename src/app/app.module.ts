@@ -20,6 +20,13 @@ import { FormsModule } from '@angular/forms';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleDemoComponent } from './ng-style-demo/ng-style-demo.component';
 import { HighlightDirective } from './highlight-demo.directive';
+import { RoutingDemoComponent } from './routing-demo/routing-demo.component';
+import { RoutingFirstComponent } from './routing-demo/routing-first/routing-first.component';
+import { RoutingSecondComponent } from './routing-demo/routing-second/routing-second.component';
+import { RoutingDemoModule } from './routing-demo/routing-demo.module';
+import { RoutingWithParamsComponent } from './routing-with-params/routing-with-params.component';
+import { RoutingWithParamsFirstComponent } from './routing-with-params/routing-with-params-first/routing-with-params-first.component';
+import { RoutingWithParamsSecondComponent } from './routing-with-params/routing-with-params-second/routing-with-params-second.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +47,20 @@ import { HighlightDirective } from './highlight-demo.directive';
     TemplateVariablesComponent,
     NgClassComponent,
     NgStyleDemoComponent,
-    HighlightDirective
+    HighlightDirective,
+    RoutingDemoComponent,
+    RoutingFirstComponent,
+    RoutingSecondComponent,
+    RoutingWithParamsComponent,
+    RoutingWithParamsFirstComponent,
+    RoutingWithParamsSecondComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TopbarModule,
-    FormsModule 
+    FormsModule,
+    RoutingDemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
